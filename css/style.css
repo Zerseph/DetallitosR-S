@@ -1,176 +1,139 @@
-* {
-  padding: 0;
+/* Estilos generales */
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
   margin: 0;
+  padding: 0;
 }
 
-.container{
-  color:black;
-  font-weight: 600;
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.container {
+  margin: 50px auto;
   max-width: 800px;
-  margin: auto;
-  padding: 20px;
-
+  text-align: center;
 }
 
-.row{
+h1 {
+  font-size: 32px;
+  color: white;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: #d196d1;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #ffcaf6;
+}
+
+/* Estilos para el cuerpo */
+.productos {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px;
-}
-
-.column{
-  flex: 1;
-  padding: 10px;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px;
-}
-
-nav a:hover {
-  color: #1BF7DE;
-}
-
-.container-nav {
-  display: flex;
-  padding: 10px;
-  height: 50px;
-  background-color: rgb(14, 36, 160);
-}
-
-
-.navbar {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 4px;
-  display: flex;
   justify-content: center;
-  width: 100%;
+  animation: fadeInUp 1s ease-in-out;
 }
 
-
-.brand {
-  display: flex;
-  align-items: center;
+.producto {
+  width: 19rem;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ca76c6;
+  border: solid 1px black;
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
 }
 
-li>a {
-  padding: 8px 24px;
+.producto:hover {
+  transform: translateY(-5px);
+  background-color: #dd8cd9ec;
+  cursor: pointer;
 }
 
-
-li {
-  list-style-type: none;
+.producto img {
+  max-width: 20rem;
+  max-height: 28rem;
+  height: 15rem;
+  width: 25rem;
+  margin-bottom: 10px;
+  transform: translateX(-7px);
 }
 
-
-a {
-  color: white;
-  text-decoration:none;
+.precio {
+  font-weight: bold;
+  font-size: 18px;
 }
 
-
-.nav-links {
-  display: flex;
-  align-items: center;
+/* Estilos para el footer */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  animation: fadeInUp 1s ease-in-out;
 }
 
-
-.button-menu-toggle {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .column {
-    flex: 100%;
+/* Implementación de diseño responsivo */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
   }
 
-
-  .nav-links {
-    display: none;
-  }
-
-
-  .button-menu-toggle {
-    display: block;
-    background-color: white;
-    border:none;
-    border-radius: 50px;
-    padding: 0 24px;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 20px;
-  }
- 
-  .nav-links.nav-links-responsive {
-    position: absolute;
-    display: flex;
-    background-color: rgba(20,20,20,0.95);
-    width: 100%;
-    height: 100%;
-    top: 70px;
-    left: 0;
+  .navbar ul {
     flex-direction: column;
-    padding-top: 200px;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .productos {
+    flex-direction: column;
     align-items: center;
-    gap:70px;
-    font-size: 40px;
+  }
 
-
+  .producto {
+    width: 100%;
   }
 }
-
-
-.imagenGaleria {
-  width: 300px;
-  height: 300px;
-}
-
-.titulo {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-.galeriaAcercaDe {
-  display: flex;
-  justify-content: center;
-}
-
-footer{
-  position:static;
-  left: 0;
-
-  bottom: 0;
-  width: 100%;
-  background-color: #ebe8e8a1;
-  color: black;
-  text-align: center;
-
-}
-
-.videoFondo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 105%;
-  min-height: 100%;
-  transform: translateX(calc((100% - 100vw) / 2));
-  z-index: -2;
-}
-
-.greeting {
-  text-align: center;
-}
-
-
-
-

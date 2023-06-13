@@ -2,69 +2,69 @@
 <html>
 
 <head>
-  <title>Mi Primer Website</title>
-
+  <title>Detallitos R&S</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
-  <!-- ============================================================== -->
-  <!--            IMPORTACION DE LA BARRA DE NAVEGACION  // HEADER    -->
-  <!-- ============================================================== -->
-
   <header>
-    <nav class="navbar" role="navigation">
+    <nav class="navbar">
       <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="services.html">Servicios</a></li>
-        <li><a href="contact.html">Contacto</a></li>
-        <li><a href="about.html">Acerca de</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ============================================================== -->
-  <!-- INICIO DEL CONTENIDO-->
-  <!-- ============================================================== -->
   <main>
 
-    <video class="videoFondo" playsinline autoplay muted loop>
-      <source src="Video/fondo.mp4" type="video/mp4" />
-    </video>
-
-
     <div class="container">
-      <h1>Bienvenidos a mi primer Website</h1>
+      <h1>Bienvenidos a nuestra tienda "Detallitos R&S"</h1>
+      <p>Aqui encontraras todo tipo de detallitos hechos a mano para regalarle a tu ser querido.</p>
       <br>
       <section>
-        <h2>Presentación</h2>
-        <p>Soy Agustin Lozada, ¡y esta es mi primera página web!</p>
-        <p>Estoy aprendiendo desarrollo web para crear sitios web visualmente atrapantes y funcionales.</p>
+        <h2>Productos Destacados</h2>
+        <div class="productos">
+          <div class="producto">
+            <img class="imagen-producto" src="https://i.pinimg.com/originals/1a/ee/34/1aee342dbe1c76f26ee39ee4aee6a685.jpg" alt="Producto 1">
+            <h3>Detalles para tu pareja o conquista tu crush</h3>
+            <p>A partir de 4.99$ tendras un catalogo de regalos que
+              le puedes regalar a tu pareja o conquistar a esa persona que tanto
+              anhelas.
+            </p>
+            <p class="precio">$4.99</p>
+          </div>
+          <div class="producto">
+            <img class="imagen-producto" src="https://i.pinimg.com/736x/d6/28/fc/d628fc90ee87a45537475e3cfc99c120.jpg" alt="Producto 2">
+            <h3>Detalle Dial del Padre</h3>
+            <p>Este detalle esta hecho con Cartulina, dentro del mismo
+              viene con un Chocolate tipo barra, Ideal como regalo para papá. Tambien
+            puedes pedir diseños personalizados a tu gusto!</p>
+            <p class="precio">$9.99</p>
+          </div>
+          <div class="producto">
+            <img class="imagen-producto" src="https://i.etsystatic.com/32175150/r/il/fa6977/4170971822/il_fullxfull.4170971822_t24k.jpg" alt="Producto 3">
+            <h3>Set decorativo para cumpleaños</h3>
+            <p>Tenemos varias promociones para el set decorativo, este set
+              viene con distintos detalles para decorar tu cumpleaños, la tematica es personalizada a tu gusto, pregunta sin compromiso!.</p>
+            <p class="precio">$18.99</p>
+          </div>
+        </div>
       </section>
-      <br>
-      <section>
-        <h2>Lo que se viene...</h2>
-        <p>
-          A lo largo de este curso, estaré aprendiendo HTML, CSS y JavaScript. Estos lenguajes me ayudarán a crear una
-          base sólida en el desarrollo web front-end.
-        </p>
-      </section>
-      <br>
-      <div>
-      <iframe width="400" height="300" src="https://www.youtube.com/embed/m8kwnR-wUg8" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-      </div>
-
     </div>
   </main>
 
   <footer>
-    <button onClick="showAlert()" aria-label="Haz clic en mí">¡Haz clic en mí!</button>
-    <script src="js/script.js"></script>
-    copyright Agustin Lozada 2023
+    <p>&copy; 2023 Tienda de Regalos Hechos a Mano "Detallitos R&S". Todos los derechos reservados.</p>
   </footer>
 
+  <video id="video-background" autoplay muted loop>
+    <source src="video/nature_-_109454 (Original).mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <script src="js/script.js"></script>
 </body>
+
 </html>
