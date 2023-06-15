@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Detallitos R&S - Productos</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/productos.css" />
+    <script src="js/productos.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <div class="container">
+            <h1>Productos</h1>
+
+            <div class="categorias">
+                <button class="categoria" onclick="mostrarProductos('todos')">Mostrar todos</button>
+                <button class="categoria" onclick="mostrarProductos('padres')">Detalles para tus padres</button>
+                <button class="categoria" onclick="mostrarProductos('cumpleanos')">Detalles de cumpleaños</button>
+                <button class="categoria" onclick="mostrarProductos('pareja')">Detalles para tu pareja</button>
+                <button class="categoria" onclick="mostrarProductos('escolares')">Detalles escolares</button>
+                <button class="categoria" onclick="mostrarProductos('varios')">Detalles Varios</button>
+            </div>
+
+            <div class="buscador">
+                <input type="text" id="input-buscar" placeholder="Buscar por categoría..." oninput="filtrarProductos()">
+            </div>
+
+            <div class="catalogo">
+
+                <div class="producto padres">
+                    <div class="botones">
+                      <button class="btn-anterior" onclick="cambiarImagenAnterior('cajacorbata')"><img src="img/flecha.png" alt="Anterior"></button>
+                      <img class="producto-imagen" id="cajacorbata" src="img/productos/cajacorbata.jpg" alt="cajacorbata">
+                      <button class="btn-siguiente" onclick="cambiarImagenSiguiente('cajacorbata')"><img src="img/flecha.png" alt="Siguiente"></button>
+                    </div>
+                    <h3>Caja tipo corbata dulcera</h3>
+                    <h4><b>Categoria:</b> Detalles para tus padres</h4>
+                    <p>Una caja en forma de corbata y llena de dulces para que tu papa se deleite. Ideal como regalo para papá, colores a tu gusto.</p>
+                    <p class="precio">$9.99</p>
+                    <a href="#" class="btn-comprar">Comprar</a>
+                  </div>
+
+                  <div class="producto padres">
+                    <div class="botones">
+                      <button class="btn-anterior" onclick="cambiarImagenAnterior('cajaregalos')"><img src="img/flecha.png" alt="Anterior"></button>
+                      <img class="producto-imagen" id="cajaregalos" src="img/productos/cajaderegalos.jpg" alt="cajaregalos">
+                      <button class="btn-siguiente" onclick="cambiarImagenSiguiente('cajaregalos')"><img src="img/flecha.png" alt="Siguiente"></button>
+                    </div>
+                    <h3>Caja tipo corbata dulcera</h3>
+                    <h4><b>Categoria:</b> Detalles para tus padres</h4>
+                    <p>Una caja en forma de corbata y llena de dulces para que tu papa se deleite. Ideal como regalo para papá, colores a tu gusto.</p>
+                    <p class="precio">$9.99</p>
+                    <a href="#" class="btn-comprar">Comprar</a>
+                  </div>
+
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tienda de Regalos Hechos a Mano "Detallitos R&S". Todos los derechos reservados.</p>
+    </footer>
+
+    <video id="video-background" autoplay muted loop>
+        <source src="video/nature.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
